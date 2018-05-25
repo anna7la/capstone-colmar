@@ -1,0 +1,22 @@
+
+/* Phone Visuals */
+
+@media only screen AND (max-width: 600px) {
+  header, nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 64px;
+  }
+
+  .logo {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav {
+    flex-grow: 3;
+  }
+}

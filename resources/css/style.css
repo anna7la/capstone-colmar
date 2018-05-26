@@ -39,6 +39,12 @@ a {
 
 /* Desktop Screen */
 
+    /* General Styles */
+
+    .mobile {
+      display: none;
+    }
+
     /* Hero Section */
 
     .hero {
@@ -79,6 +85,14 @@ a {
     font-size: 2rem;
     line-height: 2.5rem;
     padding: 0.5rem 0;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: inline;
   }
 
   /* Header */

@@ -15,9 +15,9 @@
     <header>
       <div class="logo">
         <img src="./resources/media/icons/ic-logo.svg" alt="Colmar Academy Logo">
-        <span class="bold desktop">COLMAR</span>
-        <span class="desktop">ACADEMY</span>
+        <span class="desktop"><span class="bold">COLMAR</span>ACADEMY</span>
       </div>
+
       <nav>
         <a href="#">
           <img class="mobile" src="./resources/media/icons/ic-on-campus.svg" alt="On Campus">
@@ -28,7 +28,7 @@
           <span class="desktop">Online</span>
         </a>
         <a href="#" class="desktop">For Companies</a>
-        <a href="#">
+        <a href="#" class="nopadding">
           <img class="mobile" src="./resources/media/icons/ic-login.svg" alt="Login">
           <span class="desktop">Sign In</span>
         </a>
@@ -38,7 +38,7 @@
 
     <!-- Hero Section F -->
     <div class="hero">
-      <img src="./resources/media/images/banner.jpg" alt="Top view of two women studying">
+      <figure><img src="./resources/media/images/banner.jpg" alt="Top view of two women studying"></figure>
       <div class="txtgroup">
         <hgroup>
           <h1>Learn Something New Everyday</h1>
@@ -165,28 +165,38 @@
     <!-- Thesis Exhibit -->
     <section id="thesis">
         <h1>Thesis Exhibits</h1>
-        <div class="column one">
-            <video autoplay muted loop>
-              <source src="./resources/media/videos/thesis.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <h5 class="desktop">Reimagine urban</h5>
-            <p class="desktop">I am an immensely famous quote written by a very famous person. We are doing great. Please listen to me as I bestow my wisdom on you. It is not a potato's work but a real person's work. PLease believe me. Thank you.</p>
+        <div class="thesis group">
+          <div class="column one">
+              <video autoplay muted loop>
+                <source src="./resources/media/videos/thesis.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <h5 class="desktop">Reimagine urban</h5>
+              <p class="desktop">I am an immensely famous quote written by a very famous person. We are doing great. Please listen to me as I bestow my wisdom on you. It is not a potato's work but a real person's work. PLease believe me. Thank you.</p>
+          </div>
+
+          <hgroup class="column two desktop">
+              <div class="Item one">
+                  <figure>
+                    <img src="./resources/media/images/thesis-fisma.jpg" alt="Top View of Hand drawing graphs">
+                  </figure>
+                  <div class="txtgroup">
+                    <h5>Fisma: Design and Prototype</h5>
+                    <p>Designer showcase of new prototype product</p>
+                  </div>
+              </div>
+
+              <div class="Item two">
+                  <figure>
+                    <img src="./resources/media/images/thesis-now-and-then.jpg" alt="New York Skyline">
+                  </figure>
+                  <div class="txtgroup">
+                    <h5>Now and Then</h5>
+                    <p>Research study about New York</p>
+                  </div>
+              </div>
+          </hgroup>
         </div>
-
-        <hgroup class="column two desktop">
-            <div class="Item one">
-                <img src="./resources/media/images/thesis-fisma.jpg" alt="Top View of Hand drawing graphs">
-                <h5>Fisma: Design and Prototype</h5>
-                <p>Designer showcase of new prototype product</p>
-            </div>
-
-            <div class="Item two">
-                <img src="./resources/media/images/thesis-now-and-then.jpg" alt="New York Skyline">
-                <h5>Now and Then</h5>
-                <p>Research study about New York</p>
-            </div>
-        </hgroup>
     </section>
         <!-- Title -->
         <!-- Video -->
@@ -194,8 +204,10 @@
     <!-- Footer F -->
     <footer>
       <p>© 2016 Colmar Academy. All Rights reserved.</p>
-      <a href="#" class="desktop">Terms</a>
-      <a href="#" class="desktop">Privacy</a>
+      <nav>
+        <a href="#" class="desktop">Terms</a>
+        <a href="#" class="desktop">Privacy</a>
+      </nav>
     </footer>
         <!-- Copyright -->
 

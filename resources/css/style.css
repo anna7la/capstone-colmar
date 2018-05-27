@@ -9,32 +9,37 @@ font-size: 16px;
 
 h1, h2, h3, h4 {
 font-weight: 700;
+padding-bottom: 1rem;
 }
 
 h1 {
-  font-size: 4rem;
-  line-height: 4.2rem;
+  font-size: 3rem;
+  line-height: 3.2rem;
   color: crimson;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 h5 {
-  font-size: 2.5rem;
-  line-height: 3rem;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
 }
 
 p {
   line-height: 1.3rem;
+  color: #969696;
+}
+
+.txtgroup a {
+  text-decoration: underline;
+  display: block;
 }
 
 a {
-  text-decoration: underline;
   color: crimson;
-  display: block;
-  padding: 1rem 0px;
+  padding: 1rem 0;
 }
 
 /* Desktop Screen */
@@ -45,10 +50,48 @@ a {
       display: none;
     }
 
+    /* Header */
+
+    header {
+      display: flex;
+      padding: 1rem 1.5rem;
+      height: 2rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-family: Oswald, sans-serif;
+      letter-spacing: 0.06rem;
+      display: flex;
+      align-items: center;
+      color: #9b9b9b;
+    }
+
+    header span.bold {
+      font-weight: bold;
+      color: #4a4a4a;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+    }
+
+    nav a {
+      padding-right: 1rem;
+    }
+
+    nav a.nopadding {
+      padding-right: 0;
+    }
     /* Hero Section */
 
     .hero {
       background-color: #e8e8ee;
+      display: flex;
+      padding: 2rem 1.5rem;
+      box-sizing: border-box;
     }
 
     .txtgroup button {
@@ -62,10 +105,182 @@ a {
       margin-top: 1rem;
     }
 
+    .hero figure {
+      width: 60%;
+    }
+    .hero img {
+      width: 100%;
+    }
+    .hero .txtgroup {
+      padding-left: 1.5rem;
+      width: 40%;
+    }
+
+    .txtgroup {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* Quicklinks */
+
+    .information {
+      display: flex;
+      padding: 2rem 1.5rem;
+
+    }
+
+    aside img {
+      width: 100%;
+      height: auto;
+    }
+
+    aside {
+      width: 60%;
+    }
+
+    aside h1 {
+      padding-top: 2rem;
+      padding-bottom: 1.5rem;
+    }
+    aside span {
+      font-family: Helvetica, sans-serif;
+      font-size: 0.8rem;
+    }
+
+    aside p {
+      padding-bottom: 2.5rem;
+    }
+    #quicklinks .Item {
+      display: flex;
+      height: 10rem;
+      padding-bottom: 2rem;
+    }
+
+    #quicklinks img {
+      max-width: 35%;
+      height: auto;
+      object-fit: cover;
+      overflow: hidden;
+    }
+
+    #quicklinks {
+            padding-left: 1.5rem;
+            width: 40%;
+
+    }
+
+    #quicklinks .txtgroup {
+      width: 65%;
+      padding-left: 2rem;
+    }
+
+    /* Start Learning */
+
+    #startlearning {
+      background-color: #eaebec;
+      padding: 2rem 4.5rem;
+    }
+
+    #startlearning hgroup {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    #startlearning h1 {
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+
+    #startlearning .Item {
+
+      width: 30%;
+      padding: 1rem;
+    }
+
+    #startlearning .Item img {
+      width: 100%;
+      height: auto;
+    }
+
+    #startlearning .txtgroup {
+      background-color: white;
+      padding: 1rem;
+      height: 8rem;
+      justify-content: flex-start;
+      margin-top: -0.5rem;
+    }
+
+    #startlearning h5 {
+      padding-bottom: 1rem;
+    }
+
+    /* Thesis Exhibit */
+
+    #thesis h1 {
+      text-align: center;
+      padding-bottom: 2rem;
+    }
+
+    #thesis {
+      padding: 2rem 1.5rem;
+    }
+
+    .thesis {
+      display: flex;
+
+    }
+
+    .column.one {
+      width: 60%;
+      padding-right: 1.5rem;
+    }
+
+    .column.two {
+      width: 40%;
+    }
+
+    #thesis video {
+      width: 100%;
+      height: auto;
+      padding-bottom: 1.5rem;
+    }
+
+    #thesis .Item {
+      display: flex;
+      padding: 1rem;
+    }
+
+    #thesis .Item.one {
+      background-color: #eaebec;
+    }
+
+    #thesis figure {
+      width:35%;
+    }
+
+    #thesis img {
+      width: 100%;
+      height: auto;
+    }
+
+    #thesis .txtgroup {
+      width: 65%;
+      padding: 1rem;
+    }
+
+    #thesis h5 {
+      padding-bottom: 0.5rem;
+    }
     /* Footer */
 
     footer {
-      padding: 1rem;
+      padding: 0 1rem;
+      border-top: 1px solid #eaebec;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
 /* Phone Visuals */
@@ -101,7 +316,7 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 4rem;
+    height: 1rem;
   }
 
   .logo {
@@ -126,53 +341,98 @@ a {
     height: auto;
   }
 
+  .hero figure {
+    width: 100%
+  }
   .hero .txtgroup {
     padding: 2rem 1rem;
-  }
-
-  /* Quicklinks */
-
-  #quicklinks {
-    padding: 1rem;
     width: 100%;
     box-sizing: border-box;
   }
 
-  #quicklinks img {
+  .hero {
+    flex-direction: column;
+    padding: 0px;
+  }
+  /* Mobile Quicklinks */
+
+  #quicklinks {
     width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  #quicklinks .Item {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #quicklinks img {
+    max-width: 100%;
     height: auto;
     padding-top: 1rem;
   }
 
   #quicklinks .txtgroup {
-    padding-bottom: 1rem;
+    padding-left: 0;
+    width: 100%;
   }
 
   /* Start Learning */
 
+  #startlearning hgroup {
+    display: block;
+  }
+
+  #startlearning .txtgroup {
+    padding: 0;
+    height: auto;
+    margin-top: 0;
+  }
+
   #startlearning {
     padding: 2rem 1rem;
-    border: 1px solid #d3d3d3;
+    border: 0.06rem solid #d3d3d3;
+    background-color: white;
   }
 
   #startlearning h5 {
     background-color: #e8e8ee;
-    margin: 0.5rem 0;
     padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #startlearning h1 {
+    text-align: left;
+  }
+
+  #startlearning .Item {
+    width: 100%;
+    padding: 0;
   }
 
   /* Thesis */
 
   #thesis {
-    padding: 2rem 0px;
+    padding: 2rem 0;
   }
 
   #thesis h1 {
     padding-left: 1rem;
   }
 
+  .column.one {
+    width: 100%;
+    padding: 0;
+  }
+
   #thesis video {
     width: 100%;
     height: auto;
+  }
+
+  /* Footer */
+  footer {
+    border: 0px;
   }
 }

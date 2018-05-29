@@ -5,6 +5,7 @@ color: black;
 font-family: Sunflower, Arial, sans-serif;
 font-weight: 300;
 font-size: 16px;
+
 }
 
 h1, h2, h3, h4 {
@@ -42,26 +43,29 @@ a {
   padding: 1rem 0;
 }
 
+a:hover {
+  color: grey;
+}
+
 /* Desktop Screen */
 
-    /* General Styles */
+    /* General Desktop Styles */
 
     .mobile {
       display: none;
     }
 
-    /* Header */
+    /* Header Desktop */
 
     header {
       display: flex;
       padding: 1rem 1.5rem;
       height: 2rem;
-      display: flex;
       justify-content: space-between;
     }
 
     .logo {
-      font-family: Oswald, sans-serif;
+      font-family: sans-serif;
       letter-spacing: 0.06rem;
       display: flex;
       align-items: center;
@@ -85,7 +89,7 @@ a {
     nav a.nopadding {
       padding-right: 0;
     }
-    /* Hero Section */
+    /* Hero Section Desktop */
 
     .hero {
       background-color: #e8e8ee;
@@ -103,6 +107,12 @@ a {
       height: 2.5rem;
       border: 0px;
       margin-top: 1rem;
+      transition: all 0.2s ease-out;
+    }
+
+    .txtgroup button:hover {
+      cursor: pointer;
+      background-color: black;
     }
 
     .hero figure {
@@ -122,7 +132,7 @@ a {
       justify-content: center;
     }
 
-    /* Quicklinks */
+    /* Quicklinks Desktop */
 
     .information {
       display: flex;
@@ -151,6 +161,7 @@ a {
     aside p {
       padding-bottom: 2.5rem;
     }
+
     #quicklinks .Item {
       display: flex;
       height: 10rem;
@@ -167,7 +178,6 @@ a {
     #quicklinks {
             padding-left: 1.5rem;
             width: 40%;
-
     }
 
     #quicklinks .txtgroup {
@@ -175,7 +185,7 @@ a {
       padding-left: 5%;
     }
 
-    /* Start Learning */
+    /* Start Learning Desktop */
 
     #startlearning {
       background-color: #eaebec;
@@ -216,7 +226,7 @@ a {
       padding-bottom: 1rem;
     }
 
-    /* Thesis Exhibit */
+    /* Thesis Exhibit Desktop*/
 
     #thesis h1 {
       text-align: center;
@@ -273,7 +283,7 @@ a {
     #thesis h5 {
       padding-bottom: 0.5rem;
     }
-    /* Footer */
+    /* Footer Desktop*/
 
     footer {
       padding: 0 1rem;
@@ -299,7 +309,7 @@ a {
       line-height: 2.2rem;
     }
 
-    /* Quicklinks */
+    /* Quicklinks Tablet */
 
     #quicklinks .Item {
       background-color: #eaebec;
@@ -308,6 +318,10 @@ a {
       height: auto;
     }
 
+    #quicklinks .Item:hover {
+      background-color: darkgrey;
+      cursor: pointer;
+    }
     /* Start Learning Tablet */
 
     #startlearning .Item {
@@ -355,7 +369,7 @@ a {
     display: inline;
   }
 
-  /* Header */
+  /* Header Phone */
 
   header, nav {
     display: flex;
@@ -375,7 +389,7 @@ a {
     flex-grow: 3;
   }
 
-  /* Hero */
+  /* Hero Phone */
 
   .hero h5 {
     padding: 1rem 0;
@@ -423,7 +437,7 @@ a {
     width: 100%;
   }
 
-  /* Start Learning */
+  /* Start Learning Phone */
 
   #startlearning hgroup {
     display: block;
@@ -456,7 +470,7 @@ a {
     padding: 0;
   }
 
-  /* Thesis */
+  /* Thesis Phone */
 
   #thesis {
     padding: 2rem 0;
@@ -477,7 +491,7 @@ a {
     height: auto;
   }
 
-  /* Footer */
+  /* Footer Phone */
   footer {
     border: 0px;
   }
